@@ -1,0 +1,512 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Favour Usunobun | Cybersecurity & Cloud Security</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f14;
+      color: #e8edf2;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header {
+      padding: 90px 0 60px;
+      border-bottom: 1px solid #202731;
+    }
+
+    .eyebrow {
+      color: #8b98a8;
+      font-size: 14px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 62px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .role {
+      font-size: 20px;
+      color: #aeb8c4;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      max-width: 700px;
+      color: #8f9aa7;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 28px;
+    }
+
+    .about {
+      max-width: 750px;
+      color: #aeb8c4;
+    }
+
+    .projects {
+      display: grid;
+      gap: 22px;
+    }
+
+    .card {
+      background: #111720;
+      border: 1px solid #202934;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 6px;
+    }
+
+    .project-type {
+      color: #7f8b99;
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+
+    .card p {
+      color: #aeb8c4;
+      margin-bottom: 12px;
+    }
+
+    .label {
+      color: #e8edf2;
+      font-weight: bold;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0;
+    }
+
+    .tag {
+      border: 1px solid #2a3440;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: #9ca8b5;
+    }
+
+    .screenshot-placeholder {
+      height: 150px;
+      border: 1px dashed #394451;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #687482;
+      margin: 20px 0;
+      font-size: 13px;
+    }
+
+    .links {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #c8d2dc;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .private-note {
+      border-top: 1px solid #202934;
+      margin-top: 20px;
+      padding-top: 15px;
+      color: #687482;
+      font-size: 13px;
+    }
+
+    .contact {
+      border-top: 1px solid #202731;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #8f9aa7;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      color: #596572;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 65px 0 45px;
+      }
+
+      section {
+        padding: 45px 0;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <div class="eyebrow">
+        CYBERSECURITY • CLOUD • DEVSECOPS
+      </div>
+
+      <h1>Favour Usunobun</h1>
+
+      <div class="role">
+        Cybersecurity & Cloud Security Engineer
+        <br>
+        Detection Engineering | DevSecOps | AWS
+      </div>
+
+      <p class="intro">
+        I build and secure cloud and security environments, with hands-on work
+        across detection engineering, security monitoring, AWS, DevSecOps,
+        and security automation.
+      </p>
+
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+
+      <h2>About</h2>
+
+      <p class="about">
+        My work sits at the intersection of cybersecurity and cloud engineering.
+        I focus on building practical security systems, improving visibility,
+        developing detections, securing infrastructure, and integrating security
+        into development workflows.
+      </p>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Selected Work</h2>
+
+      <div class="projects">
+
+        <article class="card">
+
+          <h3>SecOpsAI</h3>
+
+          <div class="project-type">
+            Detection Engineering • AI Threat Detection
+          </div>
+
+          <p>
+            <span class="label">Problem:</span>
+            Traditional detection workflows can struggle with the volume and
+            speed of security events.
+          </p>
+
+          <p>
+            <span class="label">What I did:</span>
+            Worked on an AI-driven threat detection system focused on automated
+            detection and security event analysis.
+          </p>
+
+          <p>
+            <span class="label">Solution:</span>
+            An XGBoost-based detection pipeline exposed through FastAPI and
+            supported by containerization, monitoring, and CI/CD.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Detection Engineering</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+          </div>
+
+          <div class="screenshot-placeholder">
+            Project Screenshot
+          </div>
+
+          <div class="links">
+            <a href="#" target="_blank">Documentation →</a>
+            <a href="#" target="_blank">GitHub →</a>
+          </div>
+
+        </article>
+
+        <article class="card">
+
+          <h3>TradeCore</h3>
+
+          <div class="project-type">
+            AWS Infrastructure • Terraform • DevSecOps
+          </div>
+
+          <p>
+            <span class="label">Problem:</span>
+            Build a structured AWS environment for a multi-service application
+            while keeping infrastructure secure, repeatable, and manageable.
+          </p>
+
+          <p>
+            <span class="label">What I did:</span>
+            Worked on the Terraform architecture across networking, ECS, ALB,
+            RDS, Secrets Manager, and Amplify, including security and
+            deployment considerations.
+          </p>
+
+          <p>
+            <span class="label">Solution:</span>
+            Infrastructure-as-Code designed around modular AWS resources,
+            secure service connectivity, HTTPS, secrets management, policy
+            enforcement, and CI/CD using OIDC.
+          </p>
+
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">ECS</span>
+            <span class="tag">ALB</span>
+            <span class="tag">RDS</span>
+            <span class="tag">OPA</span>
+            <span class="tag">CI/CD</span>
+          </div>
+
+          <div class="screenshot-placeholder">
+            Project Screenshot
+          </div>
+
+          <div class="links">
+            <a href="#" target="_blank">Documentation →</a>
+            <a href="#" target="_blank">GitHub →</a>
+          </div>
+
+        </article>
+
+        <article class="card">
+
+          <h3>OpsShield</h3>
+
+          <div class="project-type">
+            Cloud Security Monitoring • Detection Engineering
+          </div>
+
+          <p>
+            <span class="label">Problem:</span>
+            Security events across cloud and development environments needed
+            centralized monitoring and actionable detection.
+          </p>
+
+          <p>
+            <span class="label">My contribution:</span>
+            Focused on monitoring, detection engineering, Wazuh integration,
+            log analysis, custom decoders, detection rules, event correlation,
+            testing, and validation.
+          </p>
+
+          <p>
+            <span class="label">Solution:</span>
+            A centralized monitoring architecture using Wazuh to collect and
+            analyze security telemetry from AWS and development environments.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Wazuh</span>
+            <span class="tag">AWS</span>
+            <span class="tag">CloudTrail</span>
+            <span class="tag">Detection Engineering</span>
+            <span class="tag">SIEM</span>
+          </div>
+
+          <div class="screenshot-placeholder">
+            Project Screenshot
+          </div>
+
+          <div class="links">
+            <a href="#" target="_blank">Documentation →</a>
+            <a href="#" target="_blank">GitHub →</a>
+          </div>
+
+        </article>
+
+        <article class="card">
+
+          <h3>FireOps Systems</h3>
+
+          <div class="project-type">
+            SOC • Threat Visibility • Cloud Monitoring
+          </div>
+
+          <p>
+            <span class="label">Problem:</span>
+            Security teams needed centralized visibility across endpoints,
+            network activity, and cloud infrastructure.
+          </p>
+
+          <p>
+            <span class="label">What I did:</span>
+            Worked on centralized Wazuh monitoring, Suricata network detection,
+            File Integrity Monitoring, detection scenarios, AWS CloudTrail
+            integration, and SOC response workflows.
+          </p>
+
+          <p>
+            <span class="label">Solution:</span>
+            A centralized SOC environment combining endpoint monitoring,
+            network detection, cloud logs, incident response workflows,
+            and security reporting.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Wazuh</span>
+            <span class="tag">Suricata</span>
+            <span class="tag">AWS CloudTrail</span>
+            <span class="tag">FIM</span>
+            <span class="tag">SOC</span>
+          </div>
+
+          <div class="screenshot-placeholder">
+            Project Screenshot
+          </div>
+
+          <div class="links">
+            <a href="#" target="_blank">Documentation →</a>
+            <a href="#" target="_blank">GitHub →</a>
+          </div>
+
+        </article>
+
+        <article class="card">
+
+          <h3>Handi HQ</h3>
+
+          <div class="project-type">
+            Professional Experience • Security Engineering • DevSecOps
+          </div>
+
+          <p>
+            <span class="label">Focus:</span>
+            Security monitoring, detection architecture, automation, and
+            infrastructure security for a production environment.
+          </p>
+
+          <p>
+            <span class="label">What I worked on:</span>
+            Wazuh and Shuffle deployment, AWS log integration, security
+            automation, CI/CD security, Policy-as-Code, SBOM troubleshooting,
+            SAST/DAST, and Linux/VPS security infrastructure.
+          </p>
+
+          <p>
+            <span class="label">Outcome:</span>
+            Strengthened security visibility, monitoring, automation, and
+            security controls across infrastructure and development workflows.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Wazuh</span>
+            <span class="tag">Shuffle</span>
+            <span class="tag">AWS</span>
+            <span class="tag">DevSecOps</span>
+            <span class="tag">OPA</span>
+            <span class="tag">SAST / DAST</span>
+          </div>
+
+          <div class="private-note">
+            Private company infrastructure — technical details and source
+            code are not publicly available.
+          </div>
+
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+
+      <h2>Let's Connect</h2>
+
+      <p>
+        Open to cybersecurity, cloud security, detection engineering,
+        and DevSecOps opportunities.
+      </p>
+
+      <div class="links" style="justify-content:center;">
+        <a href="https://linkedin.com/in/favour-usunobun" target="_blank">
+          LinkedIn
+        </a>
+
+        <a href="https://github.com/enofei" target="_blank">
+          GitHub
+        </a>
+
+        <a href="mailto:enofefavour04@gmail.com">
+          Email
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Favour Usunobun
+  </footer>
+
+</body>
+</html>
+```
