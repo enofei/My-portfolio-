@@ -1,360 +1,359 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Favour Usunobun | Cybersecurity Engineer</title>
-
-  <meta name="description" content="Favour Usunobun is a Cybersecurity Engineer focused on detection engineering, security operations, cloud security, DevSecOps, and AWS.">
-
+  <meta name="description" content="Favour Usunobun — Cybersecurity Engineer focused on detection engineering, security operations, cloud security, AWS, and DevSecOps.">
   <meta property="og:title" content="Favour Usunobun | Cybersecurity Engineer">
-  <meta property="og:description" content="Detection Engineering, Security Operations, Cloud Security and DevSecOps.">
+  <meta property="og:description" content="Detection engineering, security operations, cloud security, AWS, and DevSecOps.">
   <meta property="og:type" content="website">
-
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
-
+  <title>Favour Usunobun | Cybersecurity Engineer</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    :root {
+      --bg: #0a0f16;
+      --surface: #101722;
+      --surface-2: #151e2b;
+      --text: #edf2f7;
+      --muted: #9ba8b7;
+      --accent: #7dd3fc;
+      --accent-2: #38bdf8;
+      --border: #263445;
+      --max: 1120px;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #0b0f14;
-      color: #e8edf2;
-      line-height: 1.6;
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; }
 
     .container {
-      width: 90%;
-      max-width: 950px;
-      margin: auto;
+      width: min(92%, var(--max));
+      margin: 0 auto;
     }
 
     nav {
-      padding: 22px 0;
-      border-bottom: 1px solid #202731;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(10, 15, 22, 0.94);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
     }
 
     .nav-inner {
+      min-height: 68px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 24px;
     }
 
     .brand {
-      font-weight: bold;
-      letter-spacing: 0.5px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -0.02em;
     }
 
     .nav-links {
       display: flex;
+      flex-wrap: wrap;
       gap: 20px;
-      color: #9ca8b5;
-      font-size: 14px;
     }
 
-    .nav-links a:hover {
-      color: #e8edf2;
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.92rem;
     }
 
-    header {
-      padding: 95px 0 80px;
-      border-bottom: 1px solid #202731;
+    .nav-links a:hover { color: var(--text); }
+
+    section { padding: 78px 0; }
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
     }
 
     .eyebrow {
-      color: #8b98a8;
-      font-size: 13px;
-      margin-bottom: 15px;
-      letter-spacing: 1px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
     }
 
     h1 {
-      font-size: clamp(42px, 8vw, 68px);
-      line-height: 1.05;
-      margin-bottom: 20px;
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(2.7rem, 7vw, 5.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
     }
 
-    .role {
-      font-size: 21px;
-      color: #b5c0cb;
-      margin-bottom: 22px;
+    .hero-role {
+      margin: 22px 0 16px;
+      font-size: clamp(1.15rem, 2.5vw, 1.65rem);
+      color: var(--muted);
     }
 
-    .intro {
-      max-width: 720px;
-      color: #9ca8b5;
-      font-size: 17px;
+    .hero-copy {
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.08rem;
     }
 
-    .hero-links {
+    .actions {
       display: flex;
+      flex-wrap: wrap;
       gap: 12px;
       margin-top: 28px;
-      flex-wrap: wrap;
     }
 
     .button {
-      border: 1px solid #35404c;
-      border-radius: 7px;
-      padding: 9px 15px;
-      font-size: 14px;
-      color: #d5dde5;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 17px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.92rem;
     }
 
-    .button:hover {
-      border-color: #687482;
+    .button.primary {
+      background: var(--accent);
+      color: #071018;
+      border-color: var(--accent);
     }
 
-    section {
-      padding: 70px 0;
+    .section-label {
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
 
     h2 {
-      font-size: 29px;
-      margin-bottom: 25px;
+      margin: 8px 0 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.035em;
     }
 
-    .about {
-      max-width: 780px;
-      color: #aeb8c4;
-      font-size: 16px;
+    .section-intro {
+      max-width: 760px;
+      color: var(--muted);
+      margin-bottom: 34px;
+    }
+
+    .about-grid,
+    .focus-grid,
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
     }
 
     .projects {
       display: grid;
-      gap: 25px;
+      gap: 22px;
     }
 
-    .card {
-      background: #111720;
-      border: 1px solid #202934;
-      border-radius: 12px;
-      padding: 26px;
+    .project {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
     }
 
-    .card h3 {
-      font-size: 23px;
-      margin-bottom: 5px;
+    .project-body { padding: 26px; }
+
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
     }
 
-    .project-type {
-      color: #7f8b99;
-      font-size: 13px;
-      margin-bottom: 20px;
+    .project h3 {
+      margin: 0;
+      font-size: 1.45rem;
     }
 
-    .card p {
-      color: #aeb8c4;
-      margin-bottom: 13px;
+    .project-kicker {
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 7px;
     }
 
-    .label {
-      color: #e8edf2;
-      font-weight: bold;
+    .project p { color: var(--muted); }
+
+    .evidence {
+      margin: 20px 0;
+      border: 1px dashed var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--surface-2);
+    }
+
+    .evidence-placeholder {
+      min-height: 150px;
+      display: grid;
+      place-items: center;
+      padding: 25px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .evidence img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     .tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin: 20px 0;
+      margin: 18px 0;
     }
 
     .tag {
-      border: 1px solid #2a3440;
-      border-radius: 20px;
-      padding: 5px 10px;
-      font-size: 12px;
-      color: #aeb8c4;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 10px;
+      color: var(--muted);
+      font-size: 0.78rem;
     }
 
-    .evidence {
-      margin: 22px 0;
-    }
-
-    .evidence-placeholder {
-      min-height: 220px;
-      border: 1px dashed #394451;
-      border-radius: 8px;
+    .project-links {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #7f8b99;
-      font-size: 13px;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .evidence img {
-      width: 100%;
-      max-height: 430px;
-      object-fit: contain;
-      border-radius: 8px;
-      border: 1px solid #2a3440;
-      display: block;
-    }
-
-    .links {
-      display: flex;
-      gap: 18px;
       flex-wrap: wrap;
-      font-size: 14px;
-    }
-
-    .links a {
-      color: #c8d2dc;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
+      gap: 10px;
     }
 
     .case-studies {
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 18px;
     }
 
     .case-study {
-      padding: 22px;
-      background: #111720;
-      border: 1px solid #202934;
-      border-radius: 10px;
-    }
-
-    .case-study h3 {
-      margin-bottom: 8px;
-      font-size: 19px;
-    }
-
-    .case-study p {
-      color: #aeb8c4;
-      margin-bottom: 10px;
-    }
-
-    .experience {
-      max-width: 800px;
-    }
-
-    .experience-item {
-      background: #111720;
-      border: 1px solid #202934;
-      border-radius: 10px;
+      display: block;
+      text-decoration: none;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
       padding: 25px;
     }
 
-    .experience-item h3 {
-      font-size: 21px;
-      margin-bottom: 5px;
-    }
+    .case-study:hover { border-color: var(--accent); }
 
-    .experience-type {
-      color: #7f8b99;
-      font-size: 13px;
-      margin-bottom: 18px;
-    }
+    .case-study h3 { margin: 0 0 9px; }
 
-    .experience-item p {
-      color: #aeb8c4;
+    .case-study p { color: var(--muted); margin-bottom: 0; }
+
+    .experience-card h3 { margin-bottom: 4px; }
+
+    .experience-meta {
+      color: var(--accent);
+      font-size: 0.88rem;
       margin-bottom: 12px;
     }
 
-    .focus-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
+    .experience-card ul {
+      margin: 0;
+      padding-left: 20px;
     }
 
-    .focus-item {
-      padding: 17px;
-      background: #111720;
-      border: 1px solid #202934;
-      border-radius: 8px;
-      color: #c0cad4;
+    .private-note {
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-style: italic;
+      margin-top: 12px;
     }
 
-    .credentials {
-      color: #aeb8c4;
-      max-width: 750px;
-    }
-
-    .credential-item {
-      padding: 14px 0;
-      border-bottom: 1px solid #202731;
-    }
-
-    .contact {
-      border-top: 1px solid #202731;
-      text-align: center;
-    }
-
-    .contact p {
-      color: #9ca8b5;
-      margin-bottom: 18px;
-    }
-
-    .contact-links {
-      justify-content: center;
+    .contact-box {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+      background: var(--surface);
     }
 
     footer {
-      padding: 30px 0;
-      text-align: center;
-      color: #687482;
-      font-size: 13px;
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 0.85rem;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 760px) {
       .nav-inner {
         align-items: flex-start;
+        padding: 14px 0;
         flex-direction: column;
       }
 
-      .nav-links {
-        gap: 14px;
-        flex-wrap: wrap;
-      }
+      .nav-links { gap: 12px 16px; }
 
-      header {
-        padding: 65px 0 55px;
-      }
+      .hero { min-height: auto; padding-top: 58px; }
 
-      section {
-        padding: 50px 0;
-      }
-
-      .card {
-        padding: 21px;
-      }
-
-      .focus-grid {
+      .about-grid,
+      .focus-grid,
+      .experience-grid,
+      .case-studies {
         grid-template-columns: 1fr;
       }
+
+      .project-top { flex-direction: column; }
+
+      section { padding: 58px 0; }
     }
   </style>
 </head>
-
 <body>
 
   <nav>
     <div class="container nav-inner">
-      <a href="#" class="brand">FAVOUR USUNOBUN</a>
-
+      <a class="brand" href="#top">Favour Usunobun</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -365,466 +364,298 @@
     </div>
   </nav>
 
-  <header>
-    <div class="container">
-
-      <div class="eyebrow">
-        CYBERSECURITY • DETECTION ENGINEERING • CLOUD SECURITY
-      </div>
-
-      <h1>Favour Usunobun</h1>
-
-      <div class="role">
-        Cybersecurity Engineer
-        <br>
-        Detection Engineering | Security Operations | DevSecOps
-      </div>
-
-      <p class="intro">
-        I build practical security systems across detection engineering,
-        security monitoring, cloud security, and DevSecOps, with hands-on
-        experience across AWS, SIEM, security automation, and infrastructure security.
-      </p>
-
-      <div class="hero-links">
-        <a class="button" href="#projects">View Projects</a>
-        <a class="button" href="https://github.com/enofei" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="button" href="https://linkedin.com/in/favour-usunobun" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </div>
-
-    </div>
-  </header>
-
-  <section id="about">
-    <div class="container">
-
-      <h2>About</h2>
-
-      <p class="about">
-        My work focuses on turning security telemetry into actionable detections,
-        improving security visibility, assessing cloud environments, and integrating
-        security controls into infrastructure and development workflows.
-      </p>
-
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-
-      <h2>Selected Projects</h2>
-
-      <div class="projects">
-
-        <article class="card">
-
-          <h3>SecOpsAI</h3>
-
-          <div class="project-type">
-            Detection Engineering • AI Threat Detection
-          </div>
-
-          <p>
-            <span class="label">Problem:</span>
-            Improve automated analysis of security events using a machine-learning
-            based detection approach.
-          </p>
-
-          <p>
-            <span class="label">My role:</span>
-            Worked on the AI-driven threat detection system, including the detection
-            pipeline and supporting application, monitoring, and deployment components.
-          </p>
-
-          <p>
-            <span class="label">Evidence:</span>
-            The XGBoost detection model achieved an F1 score of 0.9931 with approximately
-            26 ms latency during project evaluation.
-          </p>
-
-          <div class="tags">
-            <span class="tag">Detection Engineering</span>
-            <span class="tag">XGBoost</span>
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Prometheus</span>
-            <span class="tag">Grafana</span>
-          </div>
-
-          <div class="evidence">
-            <div class="evidence-placeholder">
-              SecOpsAI detection or dashboard screenshot
-            </div>
-          </div>
-
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Documentation →</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub →</a>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <h3>TradeCore</h3>
-
-          <div class="project-type">
-            AWS Infrastructure • Terraform • DevSecOps
-          </div>
-
-          <p>
-            <span class="label">Problem:</span>
-            Design a structured AWS environment for a multi-service application
-            with secure, repeatable infrastructure.
-          </p>
-
-          <p>
-            <span class="label">My role:</span>
-            Worked across the Terraform architecture covering networking, ECS,
-            ALB, RDS, Secrets Manager, and Amplify, with security and deployment
-            considerations.
-          </p>
-
-          <p>
-            <span class="label">Solution:</span>
-            Modular Infrastructure-as-Code incorporating secure service connectivity,
-            HTTPS, secrets management, policy enforcement, and GitHub Actions OIDC.
-          </p>
-
-          <div class="tags">
-            <span class="tag">AWS</span>
-            <span class="tag">Terraform</span>
-            <span class="tag">ECS</span>
-            <span class="tag">ALB</span>
-            <span class="tag">RDS</span>
-            <span class="tag">OPA</span>
-            <span class="tag">CI/CD</span>
-          </div>
-
-          <div class="evidence">
-            <div class="evidence-placeholder">
-              AWS architecture or Terraform evidence
-            </div>
-          </div>
-
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Documentation →</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub →</a>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <h3>OpsShield</h3>
-
-          <div class="project-type">
-            Cloud Security Monitoring • Detection Engineering
-          </div>
-
-          <p>
-            <span class="label">Problem:</span>
-            Centralize security telemetry across cloud and development environments
-            and turn events into actionable detections.
-          </p>
-
-          <p>
-            <span class="label">My role:</span>
-            Focused on monitoring, detection engineering, Wazuh integration,
-            log analysis, custom decoders, detection rules, event correlation,
-            testing, and validation.
-          </p>
-
-          <p>
-            <span class="label">Solution:</span>
-            A centralized monitoring architecture using Wazuh to collect and analyze
-            security telemetry from AWS and development environments.
-          </p>
-
-          <div class="tags">
-            <span class="tag">Wazuh</span>
-            <span class="tag">AWS</span>
-            <span class="tag">CloudTrail</span>
-            <span class="tag">Detection Engineering</span>
-            <span class="tag">SIEM</span>
-          </div>
-
-          <div class="evidence">
-            <div class="evidence-placeholder">
-              Wazuh detection or monitoring screenshot
-            </div>
-          </div>
-
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Documentation →</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub →</a>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <h3>FireOps Systems</h3>
-
-          <div class="project-type">
-            SOC • Threat Visibility • Security Monitoring
-          </div>
-
-          <p>
-            <span class="label">Problem:</span>
-            Provide centralized visibility across endpoints, network activity,
-            and cloud infrastructure.
-          </p>
-
-          <p>
-            <span class="label">My role:</span>
-            Worked on Wazuh monitoring, Suricata network detection, File Integrity
-            Monitoring, detection scenarios, AWS CloudTrail integration, dashboards,
-            and SOC response workflows.
-          </p>
-
-          <p>
-            <span class="label">Validation:</span>
-            Security scenarios included brute-force activity, network reconnaissance,
-            privilege changes, and file modification events with corresponding
-            alerts and investigation workflows.
-          </p>
-
-          <div class="tags">
-            <span class="tag">Wazuh</span>
-            <span class="tag">Suricata</span>
-            <span class="tag">AWS CloudTrail</span>
-            <span class="tag">FIM</span>
-            <span class="tag">SOC</span>
-          </div>
-
-          <div class="evidence">
-            <div class="evidence-placeholder">
-              SOC, Wazuh, or Suricata screenshot
-            </div>
-          </div>
-
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Documentation →</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub →</a>
-          </div>
-
-        </article>
-
-        <article class="card">
-
-          <h3>AWS Cloud Security Assessment</h3>
-
-          <div class="project-type">
-            Cloud Security Assessment • Vulnerability Management
-          </div>
-
-          <p>
-            <span class="label">Problem:</span>
-            Assess AWS infrastructure for security weaknesses, determine risk,
-            and validate remediation.
-          </p>
-
-          <p>
-            <span class="label">My role:</span>
-            Performed security assessment and vulnerability-management activities,
-            documented findings, applied remediation actions, and validated the
-            resulting security posture.
-          </p>
-
-          <p>
-            <span class="label">Key findings:</span>
-            Assessment identified issues involving EC2 exposure, public RDS,
-            MFA, excessive IAM privileges, and S3 public-access controls.
-          </p>
-
-          <div class="tags">
-            <span class="tag">AWS</span>
-            <span class="tag">Security Assessment</span>
-            <span class="tag">IAM</span>
-            <span class="tag">EC2</span>
-            <span class="tag">RDS</span>
-            <span class="tag">S3</span>
-            <span class="tag">Vulnerability Management</span>
-          </div>
-
-          <div class="evidence">
-            <div class="evidence-placeholder">
-              Assessment finding, remediation, or validation evidence
-            </div>
-          </div>
-
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Assessment Report →</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub →</a>
-          </div>
-
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="case-studies">
-    <div class="container">
-
-      <h2>Case Studies</h2>
-
-      <div class="case-studies">
-
-        <article class="case-study">
-
-          <h3>Detection Engineering Walkthrough</h3>
-
-          <p>
-            Log source → parsing and decoding → detection rule → alert →
-            investigation → validation.
-          </p>
-
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Read Case Study →</a>
-          </div>
-
-        </article>
-
-        <article class="case-study">
-
-          <h3>AWS Security Assessment</h3>
-
-          <p>
-            Assessment methodology → security findings → risk rating →
-            remediation → post-remediation validation.
-          </p>
-
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Read Assessment →</a>
-          </div>
-
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="container experience">
-
-      <h2>Professional Experience</h2>
-
-      <article class="experience-item">
-
-        <h3>Handi HQ</h3>
-
-        <div class="experience-type">
-          Security Engineering • Detection Engineering • DevSecOps
-        </div>
-
-        <p>
-          Worked alongside a security engineer on production security monitoring,
-          detection architecture, automation, and infrastructure security.
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Cybersecurity • Detection Engineering • Cloud Security</div>
+        <h1>Favour Usunobun</h1>
+        <div class="hero-role">Cybersecurity Engineer · Detection Engineering · Security Operations · DevSecOps</div>
+        <p class="hero-copy">
+          I build practical security systems across detection engineering, security monitoring, cloud security, and DevSecOps, with hands-on experience across AWS, SIEM, security automation, and infrastructure security.
         </p>
+        <div class="actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button" href="https://github.com/enofei" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="button" href="https://linkedin.com/in/favour-usunobun" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button" href="Favour_Usunobun_Resume.docx">Resume</a>
+        </div>
+      </div>
+    </section>
 
-        <p>
-          Work included Wazuh and Shuffle deployment, AWS log integration,
-          security automation, CI/CD security, Policy-as-Code, SBOM troubleshooting,
-          SAST/DAST, Linux/VPS security, and resilience planning.
+    <section id="about">
+      <div class="container">
+        <div class="section-label">About</div>
+        <h2>Security engineering with a detection-first focus.</h2>
+        <p class="section-intro">
+          My work focuses on turning security telemetry into actionable detections, improving security visibility, assessing cloud environments, and integrating security controls into infrastructure and development workflows.
         </p>
-
-        <div class="tags">
-          <span class="tag">Wazuh</span>
-          <span class="tag">Shuffle</span>
-          <span class="tag">AWS</span>
-          <span class="tag">DevSecOps</span>
-          <span class="tag">OPA</span>
-          <span class="tag">SAST / DAST</span>
-        </div>
-
-        <div class="private-note">
-          Private company infrastructure — technical details and source code are not publicly available.
-        </div>
-
-      </article>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-
-      <h2>Focus</h2>
-
-      <div class="focus-grid">
-        <div class="focus-item">Detection Engineering</div>
-        <div class="focus-item">Security Operations</div>
-        <div class="focus-item">Cloud Security</div>
-        <div class="focus-item">Security Monitoring</div>
-        <div class="focus-item">DevSecOps</div>
-        <div class="focus-item">AWS</div>
-      </div>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-
-      <h2>Certifications & Education</h2>
-
-      <div class="credentials">
-        <div class="credential-item">
-          Cybersecurity training and practical security operations experience
-        </div>
-
-        <div class="credential-item">
-          AWS and cloud engineering training
-        </div>
-
-        <div class="credential-item">
-          Cybersecurity and cloud engineering internship and mentorship
+        <div class="about-grid">
+          <div class="card">
+            <h3>Detection Engineering</h3>
+            <p>Wazuh SIEM, log-source onboarding, custom decoders, MITRE ATT&CK-mapped detection rules, alert triage, event correlation, and validation.</p>
+          </div>
+          <div class="card">
+            <h3>Cloud & DevSecOps</h3>
+            <p>AWS security, IAM and least privilege, CloudTrail, Terraform, CI/CD security, OPA/Policy-as-Code, SBOM, SAST/DAST, and infrastructure hardening.</p>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">Selected Work</div>
+        <h2>Projects</h2>
+        <p class="section-intro">Practical security work with technical evidence, implementation details, and supporting documentation.</p>
 
-  <section id="contact" class="contact">
+        <div class="projects">
 
-    <div class="container">
+          <article class="project">
+            <div class="project-body">
+              <div class="project-top">
+                <div>
+                  <div class="project-kicker">Detection Engineering · Solo Project</div>
+                  <h3>SecOpsAI</h3>
+                </div>
+              </div>
+              <p><strong>Problem:</strong> Improve automated analysis of security events using ML-based detection.</p>
+              <p><strong>My role:</strong> Built the AI-driven threat detection system, including the detection pipeline, supporting application, monitoring, and deployment components.</p>
+              <p><strong>Evidence:</strong> XGBoost classifier achieved 0.9931 F1 score with approximately 26 ms API latency.</p>
+              <div class="evidence">
+                <div class="evidence-placeholder">Add SecOpsAI detection, model-results, or monitoring screenshot here.</div>
+              </div>
+              <div class="tags">
+                <span class="tag">Detection Engineering</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Grafana</span>
+              </div>
+              <div class="project-links">
+                <a class="button" href="https://github.com/enofei/secopsai" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-      <h2>Let's Connect</h2>
+          <article class="project">
+            <div class="project-body">
+              <div class="project-top">
+                <div>
+                  <div class="project-kicker">Cloud Security · Infrastructure</div>
+                  <h3>TradeCore</h3>
+                </div>
+              </div>
+              <p><strong>Problem:</strong> Design a secure, repeatable AWS environment for a multi-service application.</p>
+              <p><strong>My role:</strong> Worked across the Terraform architecture covering networking, ECS, ALB, RDS, Secrets Manager, and Amplify.</p>
+              <p><strong>Solution:</strong> Modular infrastructure design with secure service connectivity, HTTPS, secrets management, policy enforcement, and GitHub Actions OIDC.</p>
+              <div class="evidence">
+                <div class="evidence-placeholder">Add AWS architecture or Terraform evidence screenshot here.</div>
+              </div>
+              <div class="tags">
+                <span class="tag">AWS</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">ECS</span>
+                <span class="tag">ALB</span>
+                <span class="tag">RDS</span>
+                <span class="tag">OPA</span>
+                <span class="tag">CI/CD</span>
+              </div>
+              <div class="project-links">
+                <a class="button" href="https://github.com/enofei/tradecore-project2" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="button" href="https://app.notion.com/p/TradeCore-FinOps-3d2098942a498070bf8eda67dd6528f1" target="_blank" rel="noopener noreferrer">Documentation</a>
+              </div>
+            </div>
+          </article>
 
-      <p>
-        Open to cybersecurity, detection engineering, security operations,
-        cloud security, and DevSecOps opportunities.
-      </p>
+          <article class="project">
+            <div class="project-body">
+              <div class="project-top">
+                <div>
+                  <div class="project-kicker">SIEM · Detection Engineering · Team Project</div>
+                  <h3>OpsShield</h3>
+                </div>
+              </div>
+              <p><strong>Problem:</strong> Centralize cloud and development telemetry for security monitoring and detection.</p>
+              <p><strong>My role:</strong> Owned the monitoring and detection engineering workstream, including Wazuh integration, log analysis, custom decoders, detection rules, event correlation, testing, and validation.</p>
+              <p><strong>Solution:</strong> Centralized Wazuh monitoring across AWS and development telemetry with detection logic mapped to relevant attack techniques.</p>
+              <div class="evidence">
+                <div class="evidence-placeholder">Add Wazuh detection or monitoring screenshot here.</div>
+              </div>
+              <div class="tags">
+                <span class="tag">Wazuh</span>
+                <span class="tag">AWS</span>
+                <span class="tag">CloudTrail</span>
+                <span class="tag">Detection Engineering</span>
+                <span class="tag">SIEM</span>
+              </div>
+              <div class="project-links">
+                <a class="button" href="https://github.com/enofei/opsshield" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="button" href="https://drive.google.com/file/d/16uY1XUIZ8kblneI64ezA6UkpU7qGcxUr/" target="_blank" rel="noopener noreferrer">Documentation</a>
+              </div>
+            </div>
+          </article>
 
-      <div class="links contact-links">
-        <a href="https://linkedin.com/in/favour-usunobun" target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
+          <article class="project">
+            <div class="project-body">
+              <div class="project-top">
+                <div>
+                  <div class="project-kicker">SOC · Security Monitoring</div>
+                  <h3>FireOps Systems</h3>
+                </div>
+              </div>
+              <p><strong>Problem:</strong> Establish centralized visibility across endpoints, network activity, and cloud infrastructure.</p>
+              <p><strong>My role:</strong> Worked across Wazuh, Suricata, FIM, detection scenarios, AWS CloudTrail integration, dashboards, and SOC investigation workflows.</p>
+              <p><strong>Validation:</strong> Tested brute-force, network reconnaissance, privilege-change, and file-modification scenarios using resulting alerts and investigation workflows.</p>
+              <div class="evidence">
+                <div class="evidence-placeholder">Add FireOps SOC, Wazuh, Suricata, or architecture screenshot here.</div>
+              </div>
+              <div class="tags">
+                <span class="tag">Wazuh</span>
+                <span class="tag">Suricata</span>
+                <span class="tag">AWS CloudTrail</span>
+                <span class="tag">FIM</span>
+                <span class="tag">SOC</span>
+              </div>
+              <div class="project-links">
+                <a class="button" href="https://us.wps.com/l/cbEaak8Mg8kGvE05" target="_blank" rel="noopener noreferrer">Documentation</a>
+              </div>
+            </div>
+          </article>
 
-        <a href="https://github.com/enofei" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
+          <article class="project">
+            <div class="project-body">
+              <div class="project-top">
+                <div>
+                  <div class="project-kicker">AWS · Security Assessment · Vulnerability Management</div>
+                  <h3>AWS Cloud Security Assessment</h3>
+                </div>
+              </div>
+              <p><strong>Problem:</strong> Assess AWS security weaknesses, determine risk, remediate findings, and validate the results.</p>
+              <p><strong>My role:</strong> Conducted the assessment, documented findings and risk ratings, planned remediation, and performed post-remediation validation.</p>
+              <p><strong>Key findings:</strong> EC2 exposure, public RDS, missing MFA, excessive IAM privileges, and disabled S3 public-access controls.</p>
+              <div class="evidence">
+                <div class="evidence-placeholder">Add AWS assessment or remediation evidence screenshot here.</div>
+              </div>
+              <div class="tags">
+                <span class="tag">AWS</span>
+                <span class="tag">Security Assessment</span>
+                <span class="tag">IAM</span>
+                <span class="tag">EC2</span>
+                <span class="tag">RDS</span>
+                <span class="tag">S3</span>
+                <span class="tag">Vulnerability Management</span>
+              </div>
+              <div class="project-links">
+                <a class="button" href="https://github.com/enofei/AWS-Security-Assessment-Vulnerability-Analysis" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="button" href="https://drive.google.com/file/d/1rhVQU9ZHyDKugMkWRb9k8yBdCQAC4OBW" target="_blank" rel="noopener noreferrer">Assessment Report</a>
+              </div>
+            </div>
+          </article>
 
-        <a href="mailto:enofefavour04@gmail.com">
-          Email
-        </a>
-
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          Resume →
-        </a>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <section id="case-studies">
+      <div class="container">
+        <div class="section-label">Proof of Work</div>
+        <h2>Case Studies</h2>
+        <p class="section-intro">Focused walkthroughs that show how I approach security problems from telemetry and assessment through validation.</p>
+        <div class="case-studies">
+          <a class="case-study" href="https://github.com/enofei/secopsai" target="_blank" rel="noopener noreferrer">
+            <h3>Detection Engineering Walkthrough</h3>
+            <p>Detection pipeline → model and rule evaluation → API serving → monitoring → validation.</p>
+          </a>
+          <a class="case-study" href="https://drive.google.com/file/d/1rhVQU9ZHyDKugMkWRb9k8yBdCQAC4OBW" target="_blank" rel="noopener noreferrer">
+            <h3>AWS Security Assessment</h3>
+            <p>Assessment methodology → security findings → risk rating → remediation → post-remediation validation.</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  </section>
+    <section id="experience">
+      <div class="container">
+        <div class="section-label">Experience</div>
+        <h2>Professional Experience</h2>
+        <div class="experience-grid">
+          <div class="card experience-card">
+            <h3>Handi HQ</h3>
+            <div class="experience-meta">Security Engineering · Detection Engineering · DevSecOps</div>
+            <ul>
+              <li>Security monitoring and detection engineering using Wazuh.</li>
+              <li>Security automation and SOAR workflows with Shuffle.</li>
+              <li>AWS log integration and cloud security monitoring.</li>
+              <li>CI/CD security, OPA/Policy-as-Code, and SBOM troubleshooting.</li>
+              <li>SAST/DAST, Linux/VPS security, Nginx, and SSL/TLS configuration.</li>
+              <li>Security resilience and failover architecture research.</li>
+            </ul>
+            <div class="private-note">Private company infrastructure — technical details and source code are not publicly available.</div>
+          </div>
+
+          <div class="card experience-card">
+            <h3>Expadox Limited</h3>
+            <div class="experience-meta">Cybersecurity & Cloud Engineering Intern / Mentee</div>
+            <ul>
+              <li>Contributed to cybersecurity operations and infrastructure-security initiatives under mentorship from experienced security engineers.</li>
+              <li>Hands-on exposure to cloud infrastructure and architecture, including AWS and cloud security concepts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="container">
+        <div class="section-label">Technical Focus</div>
+        <h2>What I work across</h2>
+        <div class="focus-grid">
+          <div class="card"><h3>Detection Engineering</h3><p>Detection logic, decoders, ATT&CK mapping, alert validation, and security telemetry.</p></div>
+          <div class="card"><h3>Security Operations</h3><p>SIEM monitoring, event correlation, investigation workflows, and SOC visibility.</p></div>
+          <div class="card"><h3>Cloud Security</h3><p>AWS IAM, CloudTrail, network controls, security assessments, and remediation.</p></div>
+          <div class="card"><h3>DevSecOps</h3><p>Terraform, CI/CD security, OPA, SBOM, SAST/DAST, secrets management, and secure infrastructure.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials">
+      <div class="container">
+        <div class="section-label">Training & Education</div>
+        <h2>Learning & Development</h2>
+        <div class="card">
+          <ul>
+            <li>TS Academy — Cybersecurity Program</li>
+            <li>SheCodeAfrica — Cybersecurity Learning</li>
+            <li>Tech4Dev — Cybersecurity Training</li>
+            <li>Blooming Hearts Foundation — Cloud Computing (AWS)</li>
+            <li>Expadox Limited — Cybersecurity and Cloud Engineering Internship / Mentorship</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-label">Contact</div>
+        <div class="contact-box">
+          <h2>Let's connect.</h2>
+          <p class="section-intro">Open to cybersecurity, detection engineering, security operations, cloud security, and DevSecOps opportunities.</p>
+          <div class="actions">
+            <a class="button primary" href="mailto:enofefavour04@gmail.com">Email Me</a>
+            <a class="button" href="https://linkedin.com/in/favour-usunobun" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button" href="https://github.com/enofei" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="button" href="Favour_Usunobun_Resume.docx">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    © 2026 Favour Usunobun
+    <div class="container">© 2026 Favour Usunobun</div>
   </footer>
 
 </body>
 </html>
-```
